@@ -1,4 +1,4 @@
-# Valorant Instant Locker
+# Valorant Instalock
 
 A simple Valorant script to instantly lock your selected agent, can be used while afk and waiting in queue.
 
