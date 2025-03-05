@@ -1,10 +1,13 @@
 # Valorant Instant Locker
 
-A simple Valorant script to instant lock your selected agent, can be used while afk and waiting on q
+A simple Valorant script to instantly lock your selected agent, can be used while afk and waiting in queue.
 
 # Requirements
 - Python
 - pyautogui
+- opencv-python
+- pillow
+- PyScreeze
 
 # How To Use
 - Install Python
