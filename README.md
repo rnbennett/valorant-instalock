@@ -8,7 +8,7 @@ A simple Valorant script instantly locks your selected agent. It can be used whi
 - opencv-python
 - pillow
 - PyScreeze
-- 2560x1440 resolution for "LOCK IN" button - changable at AgentLock.py:104
+- 2560x1440 resolution OR 1920x1080 OR 1280x720 for "LOCK IN" button accuracy
 
 # How To Use
 - Install Python

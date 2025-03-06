@@ -12,6 +12,18 @@ if(is_admin == False):
     print('Please Run Script as Administrator')
     exit()
 
+screen_width, screen_height = pyautogui.size()
+lock_in_x, lock_in_y = 0, 0
+if screen_width == 2560:
+    lock_in_x = 1265
+    lock_in_y = 1000
+if screen_width == 1920:
+    lock_in_x = 950
+    lock_in_y = 750
+if screen_width == 1280:
+    lock_in_x = 635
+    lock_in_y = 500
+
 def wait():
     os.system('cls')
     print('1. Astra')
@@ -101,7 +113,7 @@ def wait():
 
 def lock_in_agent():
     time.sleep(0.1)
-    pyautogui.moveTo(x=1265, y=1000, duration=0.1)
+    pyautogui.moveTo(x=lock_in_x, y=lock_in_y, duration=0.1)
     time.sleep(0.1)
     pyautogui.tripleClick(interval=0.1)
     time.sleep(85)
@@ -135,7 +147,6 @@ def choose_agent(agent_name, role):
             lock_in_agent()
 
 def waiting_agent(agent_name):
-    os.system('cls')
     print(f'Waiting On Agent Select for {agent_name}...')
     print()
     return
